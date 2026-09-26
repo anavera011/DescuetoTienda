@@ -1,17 +1,19 @@
 ```mermaid
 flowchart TD
-    A([Inicio]) --> B[Leer valorCompra]
-    B --> C{"¿valorCompra >= 300000?"}
-    C -->|Sí| D["porcentajeDescuento = 0.20"]
-    C -->|No| E{"¿valorCompra >= 200000?"}
-    E -->|Sí| F["porcentajeDescuento = 0.15"]
-    E -->|No| G{"¿valorCompra >= 100000?"}
-    G -->|Sí| H["porcentajeDescuento = 0.10"]
-    G -->|No| I["porcentajeDescuento = 0.0"]
-    D --> J["Calcular valorDescontado y totalPagar"]
-    F --> J
-    H --> J
-    I --> J
-    J --> K[Mostrar Resumen de Compra]
-    K --> L([Fin])
+    A([Inicio]) --> B[Leer nombreCliente]
+    B --> C[Leer valorCompra]
+    C --> D{"¿valorCompra >= 300000?"}
+    D -->|Sí| E["porcentajeDescuento = 0.20"]
+    D -->|No| F{"¿valorCompra >= 200000?"}
+    F -->|Sí| G["porcentajeDescuento = 0.15"]
+    F -->|No| H{"¿valorCompra >= 100000?"}
+    H -->|Sí| I["porcentajeDescuento = 0.10"]
+    H -->|No| J["porcentajeDescuento = 0.0"]
+    E --> K["Calcular valorDescontado y totalPagar"]
+    G --> K
+    I --> K
+    J --> K
+    K --> L[Mostrar Resumen Personalizado]
+    L --> M([Fin])
 ```
+

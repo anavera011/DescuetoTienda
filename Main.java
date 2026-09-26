@@ -8,6 +8,10 @@ public static void main(String [] args) {
     double valorDescontado;
     double totalPagar;
     int porcentajeMostrar;
+    String nombreCliente;
+
+    System.out.println("Ingrese nombre del cliente: ");
+    nombreCliente = entrada.nextLine(); 
 
     System.out.println("Ingrese el valor de la compra: ");
     valorCompra = entrada.nextDouble();
@@ -27,6 +31,7 @@ public static void main(String [] args) {
     porcentajeMostrar = (int) (porcentajeDescuento * 100);
 
     System.out.println("======RESUMEN DE COMPRA======");
+    System.out.println("Cliente: " + nombreCliente);
     System.out.println("Valor de compra: $" + (int)valorCompra);
     System.out.println("Descuento aplicado: " + porcentajeMostrar + "%");
     System.out.println("Valor descontado: $" + (int)valorDescontado);

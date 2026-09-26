@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class DescuentoTienda {
+public class Main {
 public static void main(String [] args) {
     java.util.Scanner entrada = new Scanner(System.in);
 
@@ -28,7 +28,7 @@ public static void main(String [] args) {
 
     System.out.println("======RESUMEN DE COMPRA======");
     System.out.println("Valor de compra: $" + (int)valorCompra);
-    System.out.println("Descuento: " + porcentajeMostrar + "%");
+    System.out.println("Descuento aplicado: " + porcentajeMostrar + "%");
     System.out.println("Valor descontado: $" + (int)valorDescontado);
     System.out.println("Total a pagar: $" + (int)totalPagar);
     
